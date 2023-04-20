@@ -1,36 +1,44 @@
 import React from "react";
-import "./App.css";
-import Header from "./components/header/header";
-import Nav from "./components/nav/nav";
-import Footer from "./components/footer/Footer";
-import Article from "./components/article/Article";
-import Figure from "./components/Figure/Figure";
+import CHildComponent from "./childComponant";
 
 class App extends React.Component {
+  state = {
+    users: [
+      {
+        name: "Gorilla",
+        lastName: "Gorilla beringe",
+        ves: "250kg",
+        meat: "Meat",
+      },
+      {
+        name: "lion",
+        lastName: "Panter lio",
+        ves: "140kg",
+        meat: "Plants, insects",
+      },
+      {
+        name: "Zebra",
+        lastName: "Equus quagga",
+        ves: "350kg",
+        meat: "plants",
+      },
+    ],
+  };
+
   render() {
+    const { users } = this.state;
     return (
       <div className="container">
-        <Header />
-        <div className="row">
-          <div className="col-md-2">
-            <Nav />
-          </div>
-          <div className="col-md-10">
-            <div className="row">
-              <div className="col-md-3">
-                <Figure />
-                <Figure />
-                <Figure />
+        <h1 className="title">Animals</h1>
+        <div className=" mx-5 my-4 wrapper">
+          {users.map((item) => {
+            return (
+              <div className="row wrapper2 mt-3">
+                <CHildComponent users={item} />
               </div>
-              <div className="col-md-9">
-                <Article />
-                <Article />
-                <Article />
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
-        <Footer />
       </div>
     );
   }

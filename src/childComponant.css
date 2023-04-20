@@ -1,0 +1,18 @@
+.wrapper {
+    display: flex !important;
+    width: 100% !important;
+    justify-content: space-between;
+    text-align: center;
+}
+.wrapper2 {
+    border: 1px solid #000;
+}
+.paragrif {
+    font-size: 20px;
+    line-height: 30px;
+    font-style: oblique;
+}
+.title {
+    text-align: center;
+    align-items: center;
+}
