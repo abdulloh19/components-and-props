@@ -1,4 +1,4 @@
-.wrapper {
+/* .wrapper {
     display: flex !important;
     width: 100% !important;
     justify-content: space-between;
@@ -15,4 +15,10 @@
 .title {
     text-align: center;
     align-items: center;
+} */
+
+.child{
+    display: flex;
+    justify-content: center;
+    
 }
