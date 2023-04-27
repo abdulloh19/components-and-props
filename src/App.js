@@ -5,6 +5,7 @@ import Comp from "./computer";
 import { Modal } from "bootstrap";
 import InputRadio from "./input";
 import Users from "./users";
+import CardUsers from "./CardUsers";
 
 class App extends React.Component {
   // state = {
@@ -48,7 +49,8 @@ class App extends React.Component {
         {/* <Mycomponent /> */}
         {/* <Comp /> */}
         {/* <InputRadio /> */}
-        <Users />
+        {/* <Users /> */}
+        <CardUsers />
       </div>
     );
   }
